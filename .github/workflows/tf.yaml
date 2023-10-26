@@ -23,7 +23,7 @@ jobs:
     - name: setup wget
       run: |
         sudo apt-get update -y
-        apt install wget 
+        sudo apt install wget 
 
     - name: Install JMeter
       run: |
