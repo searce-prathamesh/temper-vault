@@ -20,6 +20,11 @@ jobs:
         java-version: '11'  # Choose the appropriate Java version
         distribution: 'adopt'
 
+    - name: setup wget
+      run: |
+        sudo yum update -y
+        yum install wget 
+
     - name: Install JMeter
       run: |
         curl https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.4.1.tgz
