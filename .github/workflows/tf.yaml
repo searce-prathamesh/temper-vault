@@ -22,8 +22,8 @@ jobs:
 
     - name: setup wget
       run: |
-        sudo yum update -y
-        yum install wget 
+        sudo apt-get update -y
+        apt install wget 
 
     - name: Install JMeter
       run: |
