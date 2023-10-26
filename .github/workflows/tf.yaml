@@ -24,6 +24,7 @@ jobs:
       run: |
         sudo apt-get update -y
         sudo apt install wget -y
+        sudo apt install curl -y
 
     - name: Install JMeter
       run: |
