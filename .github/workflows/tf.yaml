@@ -22,7 +22,9 @@ jobs:
 
     - name: Install JMeter
       run: |
-        wget https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.4.1.tgz
+        curl https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.4.1.tgz
+        tar -xzf apache-jmeter-5.4.1.tgz
+        export PATH=$PATH:$(pwd)/apache-jmeter-5.4.1/bin
         tar -xzf apache-jmeter-5.4.1.tgz
         export PATH=$PATH:$(pwd)/apache-jmeter-5.4.1/bin
       shell: bash
